@@ -10,7 +10,7 @@ t = input("대문자로 생성할 파일 이름 : ")
 html = urlopen(s)
 bsObject = BeautifulSoup(html, 'html.parser')
 
-f = open('('Get_Text.txt', 'w+', encoding='utf-8')    #먼저 복사할 파일을 선언
+f = open('Get_Text.txt', 'w+', encoding='utf-8')    #먼저 복사할 파일을 선언
 sys.stdout = f
 print(bsObject)
 f.close()
